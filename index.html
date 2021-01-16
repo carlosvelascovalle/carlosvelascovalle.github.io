@@ -11,59 +11,182 @@
 <body>
     <div onclick="toggleMenu();" class="toggle"></div>
     <section class="banner" id="home">
-        <div class="imgSideBar">
+        <div class="banner-imgSideBar">
             <img src="img/banner.png" alt="" srcset="">
         </div>
-        <div class="contentBox">
-            <h5 class="logoText">Portfolio</h5>
+        <div class="banner-contentBox">
+            <h5 class="banner-logoText">Portfolio</h5>
             <div>
                 <h4><span>Hola</span>, Soy</h4>
                 <h2>Carlos Velasco</h2>
                 <h4>Desarrollador Web</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt quas fugit voluptate
-                    perferendis optio culpa est beatae autem vero, saepe porro laboriosam officiis debitis, veritatis
-                    consequatur suscipit consequuntur quia.</p>
-                <a href="#" class="btn">Sobre Mi</a>
+                <p>En este portfolio podras descubrir desde mis conocimientos en diseño y desarrollo, pasando por mis
+                    hobbies y habilidades hasta el cambio radical en mi carrera profesional.
+                    <br>
+                    Estoy deseando afrontar nuevos retos en mi desarrollo personal y profesional para poder desarrollar
+                    mis habilidades en el sector IT.
+                    <br>
+                    <br>
+                    Si quieres saber más sobre mí, te invito a conocerme un poco mejor.
+                </p>
+                <a href="#about" class="banner-btn">Mi Historia</a>
 
             </div>
-            <ul class="sci">
+            <ul class="banner-sci">
                 <li><a href="#"><img src="img/SVG/github-brands.svg" alt="github-link"></a></li>
                 <li><a href="#"><img src="img/SVG/linkedin-brands.svg" alt="linkedin-link"></a></li>
             </ul>
         </div>
     </section>
-
     <section class="about" id="about">
         <div class="title white">
-            <h2>Sobre Mi</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum vero laudantium quibusdam nobis rem, alias
-                obcaecati at? Nihil!</p>
+            <h2>Mi historia</h2>
+            <p>Mi nombre es Carlos Velasco, soy desarrollador junior y amante de la tecnologia.</p>
         </div>
-        <div class="content">
-        <div class="textBox">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam cum iusto, alias expedita natus
-                a exercitationem delectus ad, eligendi veniam est architecto velit maxime dignissimos quod pariatur
-                aliquid nihil.
+        <div class="about-content">
+            <p class="about-textBox">
+                En 2010 comenze una <strong> Formación Profesional Dual </strong> como <strong> Técnico Superior en
+                    Sistemas Automáticos </strong> en una empresa donde trabaje durante 6 años realizando trabajos como
+                operador de maquinaria industrial automática, cambios de herramienta y control de calidad.
                 <br>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, aliquam non tempore cupiditate autem
-                modi perspiciatis similique perferendis. Ipsum beatae fuga consequuntur molestiae, laborum doloremque
-                quod culpa deleniti iusto rerum!
+                <br>
+                Pero siempre supe que esa no era mi carrera profesional, mientras trabajaba comenze uno de mis hobbies,
+                programar y aprender a realizar <strong> sistemas de trading automáticos </strong> en mercados
+                financieros.
+                Este hobbie me dio el impulso para investigar como funcionaba un ordenador, los procesos que realizaba y
+                así poco a poco comenze a conocer otros lenguajes de programación.
+                <br>
+                <br>
+                Actualmente estoy cursando un <strong> Grado Superior en Desarrollo de Aplicaciones Web </strong>
+                mientras me formo de forma autodidacta en otros lenguajes y frameworks como Angular o Spring puesto que
+                estos no son
+                estudiados en esta formación.
+                <br>
+                <br>
+                Si estas buscando una persona con <strong> entusiasmo </strong> y <strong> dedicación </strong>,
+                <br>
+                <br>
+                <strong class="about-textBox--center"> ¡ NO BUSQUES MÁS ! </strong>
             </p>
+            <div class="about-imgBox">
+                <img src="img/Foto.jpg" alt="">
+            </div>
         </div>
-    <div class="imgBox">
-        <img src="img/Foto.jpg" alt="">
-    </div>
-    </div>
     </section>
-
+    <section class="skills" id="skills">
+        <div class="title">
+            <h2>Skills</h2>
+            <p>Mis habilidades y futuros aprendizajes</p>
+        </div>
+        <div class="skills-content">
+            <div class="skills-card">
+                <h2 class="card-title">habilidades Blandas</h2>
+                <div class="card-content">
+                        <template id="template-soft">
+                            <div class="template-content">
+                                <img>
+                                <h2></h2>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h2 class="card-title">habilidades Duras</h2>
+                    <div class="card-content">
+                        <template id="template-hard">
+                            <div class="template-content">
+                                <img>
+                                <h2></h2>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h2 class="card-title">Aprendiendo</h2>
+                    <div class="card-content"></div>
+                    <template id="template-learning">
+                        <div class="template-content">
+                            <img>
+                            <h2></h2>
+                        </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="title">
+            <h2>Proyectos</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum explicabo autem est soluta quod
+                praesentium, maiores aliquid, assumenda ipsam tempora reiciendis sint quasi
+                veniam molestias placeat eaque?</p>
+        </div>
+        <div class="projects-content">
+            <div class="projects-card">
+                <img src="img/SVG/drafting-compass-solid.svg" alt="">
+                <h2>Web Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum iure. Placeat eius
+                    laudantium, distinctio dignissimos, nobis mollitia iste cum amet laborum tempora voluptate ea rerum
+                    delectus consequatur fugiat vero.</p>
+            </div>
+            <div class="projects-card">
+                <img src="img/SVG/drafting-compass-solid.svg" alt="">
+                <h2>Web Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum iure. Placeat eius
+                    laudantium, distinctio dignissimos, nobis mollitia iste cum amet laborum tempora voluptate ea rerum
+                    delectus consequatur fugiat vero.</p>
+            </div>
+            <div class="projects-card">
+                <img src="img/SVG/drafting-compass-solid.svg" alt="">
+                <h2>Web Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum iure. Placeat eius
+                    laudantium, distinctio dignissimos, nobis mollitia iste cum amet laborum tempora voluptate ea rerum
+                    delectus consequatur fugiat vero.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2>Contactar</h2>
+            <p>Puedes ponerte en contacto conmigo atraves de el siguiente formulario o enviandome un email a <a href="mailto:carlosvelascovalle@gmail.com">carlosvelascovalle@gmail.com</a></p>
+        </div>
+        <div class="contact-form">
+            <div class="contact-content">
+                <div class="contact-card-50">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="contact-card-50">
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card-50">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="contact-card-50">
+                    <input type="text" name="movil" id="movil" placeholder="Teléfono Móvil">
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card-100">
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card-100">
+                    <input type="submit" name="enviar" id="enviar" value="Enviar"></input>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">Copyright © 2020 Carlos Velasco Valle. All Right Reserved.</div>
     <div class="sidebar">
         <ul class="menu">
             <li><a href="#home" onclick="toggleMenu();">Principal</a></li>
             <li><a href="#about" onclick="toggleMenu();">Sobre Mi</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Trabajos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Proyectos</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contacto</a></li>
         </ul>
     </div>
     <script src="js/index.js"></script>
