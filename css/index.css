@@ -139,7 +139,7 @@ section {
 
 .banner p {
   font-size: 7.5em;
-  margin: 4rem 2rem;
+  margin: 2rem;
   font-weight: 300;
 }
 
@@ -319,7 +319,7 @@ section {
 }
 
 .about-textBox strong {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
 }
 
@@ -384,20 +384,11 @@ section {
           align-items: center;
   padding: 2rem;
   width: 34rem;
-  max-height: 40rem;
   margin: 2rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
   text-align: center;
   background: #f1f1e1;
-  /* &:hover {
-        background: $black;
-        color: $white;
-
-        img {
-            filter: invert(100%);
-        }
-    }*/
 }
 
 .skills-card .card-title,
@@ -472,7 +463,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  max-height: 60rem;
 }
 
 .skills-card img {
@@ -578,18 +568,33 @@ section {
     width: 100%;
     padding: 4rem;
   }
+  .banner-contentBox h4,
+  .sidebar h4 {
+    font-size: 9em;
+  }
+  .banner-contentBox h2,
+  .sidebar h2 {
+    font-size: 12em;
+  }
+  .sidebar {
+    padding-right: 2rem;
+  }
+  .sidebar ul li a {
+    font-size: 17.5em;
+  }
   .banner-logoText {
     left: 4rem;
     font-size: 7em;
   }
   .toggle {
     top: 2rem;
-    right: 2rem;
+    right: 3rem;
     width: 4rem;
     height: 4rem;
     font-size: 0.5em;
   }
   section {
+    margin: 5vw;
     padding: 4rem;
   }
   .about-content {
@@ -602,6 +607,7 @@ section {
   .about-textBox {
     min-width: 100%;
     width: 100%;
+    font-size: 4.5em;
   }
   .about-imgBox {
     width: 100%;
@@ -645,6 +651,9 @@ section {
     max-width: 100%;
     width: 100%;
     margin: 1rem 0;
+  }
+  .title p {
+    font-size: 1.75rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

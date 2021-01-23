@@ -143,7 +143,7 @@ section {
 
     p {
         font-size: 7.5em;
-        margin: 4rem 2rem;
+        margin: 2rem;
         font-weight: 300;
     }
 
@@ -303,7 +303,7 @@ section {
         font-size: 6em;
 
         strong {
-            font-size: 1em;
+            font-size: 0.9em;
             font-weight: 600;
         }
 
@@ -344,20 +344,10 @@ section {
     align-items: center;
     padding: 2rem;
     width: 34rem;
-    max-height: 40rem;
     margin: 2rem;
     transition: 0.75s;
     text-align: center;
     background: $white;
-
-   /* &:hover {
-        background: $black;
-        color: $white;
-
-        img {
-            filter: invert(100%);
-        }
-    }*/
 
     .card-title {
         height: 10%;
@@ -393,10 +383,11 @@ section {
             transition: 0.5s;
             margin: 0.5rem 0;
         }
+
         &:hover {
             background: $black;
             color: $white;
-    
+
             img {
                 filter: invert(100%);
             }
@@ -411,7 +402,6 @@ section {
 
 .skills-card {
     flex-flow: row wrap;
-    max-height: 60rem;
 
     img {
         margin: 0.25rem 2rem;
@@ -486,12 +476,14 @@ section {
                 0 0 3.2em rgba($enfasis, 0.05);
         }
     }
-    a{
+
+    a {
         font-size: 0.9em;
         font-style: italic;
         font-weight: 600;
         text-decoration: none;
         color: $white;
+
         &:hover {
             color: $white;
             text-shadow:
@@ -524,6 +516,21 @@ section {
     .sidebar {
         width: 100%;
         padding: 4rem;
+
+        h4 {
+            font-size: 9em;
+        }
+
+        h2 {
+            font-size: 12em;
+        }
+    }
+
+    .sidebar {
+        padding-right: 2rem;
+        ul li a {
+            font-size: 17.5em;
+        }
     }
 
     .banner-logoText {
@@ -533,13 +540,14 @@ section {
 
     .toggle {
         top: 2rem;
-        right: 2rem;
+        right: 3rem;
         width: 4rem;
         height: 4rem;
         font-size: 0.5em;
     }
 
     section {
+        margin: 5vw;
         padding: 4rem;
     }
 
@@ -552,6 +560,7 @@ section {
         &-textBox {
             min-width: 100%;
             width: 100%;
+            font-size: 4.5em;
         }
 
         &-imgBox {
@@ -581,7 +590,6 @@ section {
         width: 100%;
         margin: 1rem 0;
     }
-
 }
 
 
@@ -593,5 +601,9 @@ section {
         max-width: 100%;
         width: 100%;
         margin: 1rem 0;
+    }
+
+    .title p {
+        font-size: 1.75rem;
     }
 }
