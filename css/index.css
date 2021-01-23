@@ -56,7 +56,7 @@
 }
 
 section {
-  padding: 5rem 10rem;
+  padding: 1rem 2rem;
   width: 100%;
   min-height: 100vh;
 }
@@ -139,7 +139,7 @@ section {
 
 .banner p {
   font-size: 7.5em;
-  margin: 2rem;
+  margin: 3rem;
   font-weight: 300;
 }
 
@@ -221,6 +221,7 @@ section {
 
 .banner-sci {
   position: absolute;
+  margin: 2rem auto;
   left: 10rem;
   bottom: 2rem;
   width: calc(100% - 20rem);
@@ -556,8 +557,7 @@ section {
   color: #f1f1e1;
   font-size: 2em;
   text-align: center;
-  padding: 1rem 4rem 1rem 2rem;
-  width: 100vw;
+  min-height: 5vh;
 }
 
 @media (max-width: 991px) {
@@ -567,7 +567,7 @@ section {
   .banner-contentBox,
   .sidebar {
     width: 100%;
-    padding: 0 2rem 0 1rem;
+    padding: 2rem 4rem;
   }
   .banner-contentBox h4,
   .sidebar h4 {
@@ -595,7 +595,7 @@ section {
     font-size: 0.5em;
   }
   section {
-    padding: 0 4rem 0 2rem;
+    padding: 2rem 4rem;
   }
   .about-content {
     -webkit-box-orient: vertical;
