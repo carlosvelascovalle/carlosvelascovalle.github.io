@@ -556,7 +556,8 @@ section {
   color: #f1f1e1;
   font-size: 2em;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 4rem 1rem 2rem;
+  width: 100vw;
 }
 
 @media (max-width: 991px) {
@@ -566,7 +567,7 @@ section {
   .banner-contentBox,
   .sidebar {
     width: 100%;
-    padding: 4rem;
+    padding: 0 2rem 0 1rem;
   }
   .banner-contentBox h4,
   .sidebar h4 {
@@ -594,8 +595,7 @@ section {
     font-size: 0.5em;
   }
   section {
-    margin: 5vw;
-    padding: 4rem;
+    padding: 0 4rem 0 2rem;
   }
   .about-content {
     -webkit-box-orient: vertical;

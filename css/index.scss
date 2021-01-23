@@ -502,8 +502,8 @@ section {
     color: $white;
     font-size: 2em;
     text-align: center;
-    padding: 1rem;
-
+    padding: 1rem 4rem 1rem 2rem;
+    width: 100vw;
 }
 
 @media(max-width: 991px) {
@@ -515,7 +515,7 @@ section {
     .banner-contentBox,
     .sidebar {
         width: 100%;
-        padding: 4rem;
+        padding: 0 2rem 0 1rem;
 
         h4 {
             font-size: 9em;
@@ -547,8 +547,7 @@ section {
     }
 
     section {
-        margin: 5vw;
-        padding: 4rem;
+        padding: 0 4rem 0 2rem;
     }
 
     .about {
