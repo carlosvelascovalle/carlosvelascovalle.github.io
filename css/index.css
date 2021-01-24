@@ -482,11 +482,12 @@ section {
           flex-direction: column;
   place-content: center;
   place-items: center;
+  min-height: 95vh;
 }
 
 .contact-form {
   position: relative;
-  width: 100%;
+  width: 75%;
   margin-top: 2rem;
 }
 
@@ -509,7 +510,8 @@ section {
 
 .contact input,
 .contact textarea {
-  width: 100%;
+  width: 70%;
+  margin: 0 15%;
   padding: 10px;
   border: none;
   outline: none;
@@ -628,7 +630,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 75%;
 }
 
 .contact-content {

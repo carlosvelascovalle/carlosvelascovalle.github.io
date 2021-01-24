@@ -5,80 +5,74 @@ function toggleMenu() {
     sidebar.classList.toggle('active');
 }
 
-let habilidades = [
+let habilidades =
 
     [{
         title: 'Gestión del Tiempo',
         image: 'time-management',
+        habilidad: 'blanda',
     }, {
         title: 'Resolución de Problemas',
         image: 'problem-solving',
+        habilidad: 'blanda',
     }, {
         title: 'Mente abierta',
         image: 'open-mind',
+        habilidad: 'blanda',
     }, {
         title: 'tolerancia a la presión',
         image: 'patience',
-    }],
-
-    [{
+        habilidad: 'blanda',
+    }, {
         title: 'HTML',
         image: 'html5-brands',
+        habilidad: 'dura',
     }, {
         title: 'CSS & SCSS',
         image: 'css3-alt-brands',
+        habilidad: 'dura',
     }, {
         title: 'JS',
         image: 'js-square-brands',
+        habilidad: 'dura',
     }, {
         title: 'Angular',
         image: 'angular-brands',
+        habilidad: 'aprendiendo',
     }, {
         title: 'Java & Spring',
         image: 'java-brands',
+        habilidad: 'aprendiendo',
     }, {
         title: 'mysql & firebase',
         image: 'database-solid',
-    }],
-
-    [{
+        habilidad: 'dura',
+    }, {
         title: 'node-js',
         image: 'node-brands',
+        habilidad: 'aprendiendo',
     }, {
-        title: '',
-        image: '',
-    }, {
-        title: '',
-        image: '',
-    }, {
-        title: '',
-        image: '',
-    }, {
-        title: '',
-        image: '',
-    }, {
-        title: '',
-        image: '',
-    }]
-];
+        title: 'python',
+        image: 'python-brands',
+        habilidad: 'aprendiendo',
+    }];
 
-function skills(template,id) {
-    const $skills = document.getElementsByClassName("card-content")[id];
-    $template = document.getElementById(template).content;
-    $fragment = document.createDocumentFragment();
+(function() {
+    const $numSkillsType = document.getElementsByClassName("card-content").length;
+    for (let i = 0; i < $numSkillsType; i++) {
+        const $skills = document.getElementsByClassName("card-content")[i];
+        $habilityType = $skills.getAttribute('class').split(' ')[1];
+        $template = document.getElementById('template '.concat($habilityType)).content;
+        $fragment = document.createDocumentFragment();
 
+        habilidades.filter(x => x.habilidad == $habilityType).forEach((el) => {
+            $template.querySelector("img").setAttribute("src", 'img/SVG/' + el.image + '.svg');
+            $template.querySelector("img").setAttribute("alt", el.image);
+            $template.querySelector("h2").textContent = el.title;
 
-    habilidades[id].forEach((el) => {
-        $template.querySelector("img").setAttribute("src", 'img/SVG/' + el.image + '.svg');
-        $template.querySelector("img").setAttribute("alt", el.image);
-        $template.querySelector("h2").textContent = el.title;
-
-        let $clone = document.importNode($template, true);
-        $fragment.appendChild($clone);
-    });
-    $skills.appendChild($fragment);
-}
-
-skills('template-soft', 0);
-skills('template-hard', 1);
-skills('template-learning', 2);
+            let $clone = document.importNode($template, true);
+            $fragment.appendChild($clone);
+        });
+        $skills.appendChild($fragment);
+    }
+})();

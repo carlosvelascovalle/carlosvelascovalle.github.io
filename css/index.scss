@@ -416,10 +416,11 @@ section {
     flex-direction: column;
     place-content: center;
     place-items: center;
+    min-height: 95vh;
 
     &-form {
         position: relative;
-        width: 100%;
+        width: 75%;
         margin-top: 2rem;
     }
 
@@ -443,7 +444,8 @@ section {
 
     input,
     textarea {
-        width: 100%;
+        width: 70%;
+        margin:0 15%;
         padding: 10px;
         border: none;
         outline: none;
@@ -577,7 +579,7 @@ section {
     &-form {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 75%;
     }
 
     &-content {
@@ -605,4 +607,5 @@ section {
     .title p {
         font-size: 1.75rem;
     }
+
 }
