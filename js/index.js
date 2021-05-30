@@ -42,11 +42,15 @@ let habilidades =
     }, {
         title: 'Java & Spring',
         image: 'java-brands',
-        habilidad: 'aprendiendo',
-    }, {
-        title: 'mysql & firebase',
-        image: 'database-solid',
         habilidad: 'dura',
+    }, {
+        title: 'mysql',
+        image: 'mysql',
+        habilidad: 'dura',
+    }, {
+        title: 'firebase',
+        image: 'firebase',
+        habilidad: 'aprendiendo',
     }, {
         title: 'node-js',
         image: 'node-brands',
