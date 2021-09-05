@@ -18,6 +18,7 @@ $black:#1f1f1e;
 $black-light:#2f2f2e;
 $white:#f1f1e1;
 $enfasis:#00bcd4;
+$cards:#fff;
 
 * {
     box-sizing: border-box;
@@ -26,6 +27,15 @@ $enfasis:#00bcd4;
     font-family: 'Monserrat', sans-serif;
     font-size: 0.65em;
     scroll-behavior: smooth;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
 }
 
 .toggle {
@@ -48,27 +58,21 @@ $enfasis:#00bcd4;
             0 0 1.6em rgba($enfasis, 0.2),
             0 0 3.2em rgba($enfasis, 0.1);
     }
-}
 
-.toggle::after {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Font Awesome";
-    font-size: 7.5em;
-    color: $white;
-    content: "\f0c9";
-}
+    &::after {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Font Awesome";
+        font-size: 7.5em;
+        color: $white;
+        content: "\f0c9";
+    }
 
-.toggle.active::after {
-    content: "\f00d";
-}
-
-section {
-    padding: 1rem 2rem;
-    width: 100%;
-    min-height: 100vh;
+    &.active::after {
+        content: "\f00d";
+    }
 }
 
 .banner {
@@ -112,7 +116,7 @@ section {
         position: absolute;
         top: 4rem;
         left: 10rem;
-        font-size: 2.5rem;
+        font-size: 3em;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         background: $black;
@@ -142,7 +146,7 @@ section {
     }
 
     p {
-        font-size: 7.5em;
+        font-size: 1.25rem;
         margin: 3rem;
         font-weight: 300;
     }
@@ -249,12 +253,12 @@ section {
 .title {
     width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1.66rem auto;
 
     h2 {
         position: relative;
         color: $enfasis;
-        font-size: 10em;
+        font-size: 9em;
         font-weight: 700;
         letter-spacing: 0.1rem;
 
@@ -273,8 +277,8 @@ section {
     p {
         max-width: 70rem;
         display: inline-block;
-        font-size: 8em;
-        margin-top: 1.5rem;
+        font-size: 5em;
+        margin-top: 1.25rem;
     }
 
     &.white h2,
@@ -290,6 +294,7 @@ section {
 .about {
     background: $black;
 
+    justify-content: space-evenly;
     &-content {
         display: flex;
         flex-direction: row;
@@ -299,7 +304,7 @@ section {
     }
 
     &-textBox {
-        width: 100%;
+        width: calc(100% - 300px);
         color: $white;
         font-size: 6em;
 
@@ -315,20 +320,46 @@ section {
     }
 
     &-imgBox {
-        display: flex;
-        justify-content: center;
-        width: 60%;
 
-        img {
+        &-circle{
+            position: relative;
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
             display: flex;
-            place-self: center;
-            max-height: 33vw;
-            border-radius: 1rem;
-            margin: 2rem 2rem 2rem 0;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5rem;
+        }
+        &-logo{
+            position: absolute;
+            width: 20rem;
+            height: 20rem;
+            background: url(../img/Foto.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            filter: grayscale(1) brightness(1.2) contrast(1.25);
+        }
+        &-text{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: rotateText 25s linear infinite;
+
+            span{
+                color: white;
+                position: absolute;
+                left: 50%;
+                font-size: x-large;
+                transform-origin: 0 15rem;
+            }
         }
     }
 }
-
+.skills{
+    min-height: 100vh;
+    height: auto;
+}
 .skills-content,
 .projects-content {
     display: flex;
@@ -348,7 +379,7 @@ section {
     margin: 2rem;
     transition: 0.75s;
     text-align: center;
-    background: $white;
+    background: $cards;
 
     .card-title {
         height: 10%;
@@ -372,7 +403,8 @@ section {
     .template-content {
         width: 15rem;
         margin: 1rem 0;
-
+        padding: 2rem;
+        border-radius: 1rem;
         img {
             max-width: 5rem;
             transition: 0.5s;
@@ -446,7 +478,7 @@ section {
     textarea {
         width: 70%;
         margin:0 15%;
-        padding: 10px;
+        padding: 1rem;
         border: none;
         outline: none;
         background: $black-light;
@@ -501,11 +533,13 @@ section {
 }
 
 .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
     background: $black;
-    color: $white;
     font-size: 2em;
-    text-align: center;
-    min-height: 5vh;
+    color: $white;
 }
 
 @media(max-width: 991px) {
@@ -553,6 +587,7 @@ section {
     }
 
     .about {
+        justify-content: center;
         &-content {
             flex-direction: column;
             margin-top: 0;
@@ -564,15 +599,17 @@ section {
             font-size: 4.5em;
         }
 
-        &-imgBox {
+        &-imgBox-circle {
             width: 100%;
             order: -1;
-
-            img {
-                margin: 2rem auto;
-            }
+            margin: 2rem auto;
         }
+
+        margin: 0 auto;
     }
+
+
+
 }
 
 .contact {
@@ -602,10 +639,18 @@ section {
         max-width: 100%;
         width: 100%;
         margin: 1rem 0;
+        flex-flow: row wrap;
     }
 
     .title p {
         font-size: 1.75rem;
     }
 
+}
+
+@keyframes rotateText{
+
+    0%{
+        transform: rotate(360deg);
+    }
 }
