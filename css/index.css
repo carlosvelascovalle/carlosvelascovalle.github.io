@@ -293,14 +293,17 @@ section {
 .skills {
   min-height: 100vh;
   height: auto;
+  margin: 2rem 0;
 }
 
 .skills-content,
 .projects-content {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   font-size: 1em;
+  width: 100%;
 }
 
 .skills-card,
@@ -309,23 +312,23 @@ section {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   width: 34rem;
-  margin: 2rem;
   transition: 0.75s;
   text-align: center;
   background: #fff;
 }
 .skills-card .card-title,
 .projects-card .card-title {
-  height: 10%;
+  height: 5%;
 }
 .skills-card .card-content,
 .projects-card .card-content {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   place-content: center;
-  height: 80%;
 }
 .skills-card h2,
 .projects-card h2 {
@@ -337,23 +340,24 @@ section {
 }
 .skills-card .template-content,
 .projects-card .template-content {
-  width: 15rem;
-  margin: 1rem 0;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 1rem;
   border-radius: 1rem;
   background: #ccf9ff;
 }
 .skills-card .template-content img,
 .projects-card .template-content img {
-  max-width: 5rem;
+  max-width: 3.5rem;
   transition: 0.5s;
-  margin: 0.25rem 0;
+  margin: 0;
 }
 .skills-card .template-content h2,
 .projects-card .template-content h2 {
-  font-size: 10em;
+  font-size: 7em;
   transition: 0.5s;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 .skills-card .template-content:hover,
 .projects-card .template-content:hover {
