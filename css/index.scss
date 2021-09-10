@@ -26,6 +26,18 @@ $cards: #fff;
   scroll-behavior: smooth;
 }
 
+body{
+  background: $black-light;
+  display: flex;
+  justify-content: center;
+  margin: 2.5vh 0;
+}
+
+.glassmorphism {
+  width: 95vw;
+  border-radius: 2rem;
+}
+
 section {
   min-height: 100vh;
   display: flex;
@@ -37,11 +49,12 @@ section {
 
 .toggle {
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 1rem;
+  right: 1rem;
   width: 5rem;
   height: 5rem;
   background: $black;
+  border-top-right-radius: 2rem;
   cursor: pointer;
   z-index: 3;
 
@@ -72,14 +85,14 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-
+  background: rgba(white, 0.85);
+  backdrop-filter: blur(16px) saturate(180%);
   &-imgSideBar {
     position: absolute;
     top: 0;
     left: 0;
     width: 40%;
     height: 100%;
-
     img {
       position: absolute;
       top: 0;
@@ -87,6 +100,8 @@ section {
       height: 100%;
       width: 100%;
       object-fit: cover;
+    border-top-left-radius: 2rem;
+
     }
   }
 }
@@ -105,6 +120,8 @@ section {
 }
 
 .banner {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
   &-logoText {
     position: absolute;
     top: 4rem;
@@ -279,7 +296,7 @@ section {
 .about {
   background: $black;
 
-  justify-content: space-evenly;
+  justify-content: center;
   &-content {
     display: flex;
     flex-direction: row;
@@ -343,7 +360,8 @@ section {
 .skills {
   min-height: 100vh;
   height: auto;
-  margin: 2rem 0;
+  background: rgba(white, 0.85);
+  backdrop-filter: blur(16px) saturate(180%);
 }
 .skills-content,
 .projects-content {
@@ -364,7 +382,6 @@ section {
   width: 34rem;
   transition: 0.75s;
   text-align: center;
-  background: $cards;
 
   .card-title {
     height: 5%;
@@ -520,6 +537,8 @@ section {
   background: $black;
   font-size: 2em;
   color: $white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 @media (max-width: 991px) {
@@ -551,11 +570,10 @@ section {
   .banner-logoText {
     left: 4rem;
     font-size: 7em;
+
   }
 
   .toggle {
-    top: 2rem;
-    right: 3rem;
     width: 4rem;
     height: 4rem;
     font-size: 0.5em;
@@ -607,6 +625,10 @@ section {
 }
 
 @media (max-width: 500px) {
+  .banner p{
+    margin: 3rem 1.5rem;
+
+    }
   .skills-card,
   .projects-card {
     padding: 2rem 2rem;
