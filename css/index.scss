@@ -26,16 +26,14 @@ $cards: #fff;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background: $black-light;
   display: flex;
   justify-content: center;
-  margin: 2.5vh 0;
 }
 
 .glassmorphism {
-  width: 95vw;
-  border-radius: 2rem;
+  width: 100vw;
 }
 
 section {
@@ -54,7 +52,7 @@ section {
   width: 5rem;
   height: 5rem;
   background: $black;
-  border-top-right-radius: 2rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   z-index: 3;
 
@@ -100,8 +98,6 @@ section {
       height: 100%;
       width: 100%;
       object-fit: cover;
-    border-top-left-radius: 2rem;
-
     }
   }
 }
@@ -120,8 +116,6 @@ section {
 }
 
 .banner {
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
   &-logoText {
     position: absolute;
     top: 4rem;
@@ -537,8 +531,6 @@ section {
   background: $black;
   font-size: 2em;
   color: $white;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
 }
 
 @media (max-width: 991px) {
@@ -570,7 +562,6 @@ section {
   .banner-logoText {
     left: 4rem;
     font-size: 7em;
-
   }
 
   .toggle {
@@ -625,10 +616,9 @@ section {
 }
 
 @media (max-width: 500px) {
-  .banner p{
+  .banner p {
     margin: 3rem 1.5rem;
-
-    }
+  }
   .skills-card,
   .projects-card {
     padding: 2rem 2rem;

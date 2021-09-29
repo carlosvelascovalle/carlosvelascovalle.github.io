@@ -20,12 +20,10 @@ body {
   background: #2f2f2e;
   display: flex;
   justify-content: center;
-  margin: 2.5vh 0;
 }
 
 .glassmorphism {
-  width: 95vw;
-  border-radius: 2rem;
+  width: 100vw;
 }
 
 section {
@@ -44,7 +42,7 @@ section {
   width: 5rem;
   height: 5rem;
   background: #1f1f1e;
-  border-top-right-radius: 2rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   z-index: 3;
 }
@@ -89,7 +87,6 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-top-left-radius: 2rem;
 }
 
 .banner-contentBox,
@@ -105,10 +102,6 @@ section {
   padding: 10rem;
 }
 
-.banner {
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
 .banner-logoText {
   position: absolute;
   top: 4rem;
@@ -477,8 +470,6 @@ section {
   background: #1f1f1e;
   font-size: 2em;
   color: #f1f1e1;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
 }
 
 @media (max-width: 991px) {
